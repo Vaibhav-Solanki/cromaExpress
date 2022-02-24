@@ -83,11 +83,15 @@
     <div id="mainBox">
       <h2><i class="fas fa-user"></i> Register</h2>
       <div id="logiForm">
-        <input type="text" required placeholder="Full name..." id="name" />
-        <input type="mail" required placeholder="Email Adress..." id="mail" />
-        <input type="text" required placeholder="Username..." id="user" />
-        <input type="tel" required placeholder="Mobile no..." id="mobile" />
-        <input type="password" required placeholder="Password..." id="pass" />
+        <input type="text" required placeholder="Full name..." id="Name" />
+        <input type="mail" required placeholder="Email Adress..." id="email" />
+        <input type="tel" required placeholder="Mobile no..." id="Mobile" />
+        <input
+          type="password"
+          required
+          placeholder="Password..."
+          id="password"
+        />
         <button style="color: #f5c518; background-color: black" id="log"
           >Register</button
         >
@@ -105,15 +109,13 @@
     async function Login(e) {
       e.preventDefault();
       let bodyLogin = {
-        name: document.querySelector("#name").value,
-        email: document.querySelector("#mail").value,
-        password: document.querySelector("#pass").value,
-        username: document.querySelector("#user").value,
-        mobile: document.querySelector("#mobile").value,
-        description: "A Transformation in education!",
+        Name: document.querySelector("#Name").value,
+        email: document.querySelector("#email").value,
+        Mobile: document.querySelector("#Mobile").value,
+        password: document.querySelector("#password").value,
       };
       bodyLogin = JSON.stringify(bodyLogin);
-      let url = `https://masai-api-mocker.herokuapp.com/auth/register`;
+      let url = `/reg`;
       try {
         let res = await fetch(url, {
           method: "POST",
@@ -125,10 +127,12 @@
           },
         });
         let data = await res.json();
-        if (!data.error) alert("Registration Success");
-        window.open("./login.html", "_self");
-
-        console.log(data);
+        if (!data.message) {
+          alert("Registration Success");
+          window.open("./index.html", "_self");
+        } else {
+          alert(data.message);
+        }
       } catch (err) {
         console.log(err);
       }
