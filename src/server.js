@@ -4,9 +4,12 @@ const app = express();
 const start = require("./configs/db");
 // const upload = require("./configs/multer");
 const { register, login } = require("./controllers/auth");
+const prodPage = require("./controllers/product");
 // const { body } = require("express-validator");
 app.use(express.json());
+app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use("/product", prodPage);
 app.post("/reg", register);
 app.post("/log", login);
 

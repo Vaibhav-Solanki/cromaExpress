@@ -21,7 +21,7 @@ function navbar() {
     <div id="szlogo">
     <div id="szlo">
     
-    <a href="index.html"><img
+    <a href="/index.html"><img
     src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_192,f_auto"
     alt="Croma Logo"></a>
 
@@ -543,7 +543,7 @@ function navbar() {
       </a>
       
      
-      <a href="cart.html" style="color: white;
+      <a href="/routes/cart.html" style="color: white;
     text-decoration: none;"> 
       <div id="szcart">
        <i class="fas fa-shopping-cart"></i>

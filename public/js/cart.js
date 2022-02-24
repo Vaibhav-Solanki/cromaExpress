@@ -73,6 +73,6 @@ function promoAply() {
 function openPay() {
   localStorage.setItem("products", JSON.stringify(testData));
   localStorage.setItem("totalCost", JSON.stringify(totalCost));
-  window.open("/Address.html", "_self");
+  window.open("/routes/Address.html", "_self");
 }
 mapCart(testData);

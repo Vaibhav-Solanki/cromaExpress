@@ -21,9 +21,9 @@
       href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
       type="image/x-icon"
     />s
-    <link rel="stylesheet" href="./CSS/navbar.css" />
-    <link rel="stylesheet" href="./CSS/footer.css" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <style>
       .cirBox {
         width: 40px;
@@ -83,7 +83,9 @@
                   id="gstn"
                   placeholder="Enter Voucher Number"
                 />
-                <button id="vali" onclick='window.open("/order.html", "_self");'
+                <button
+                  id="vali"
+                  onclick='window.open("../order.html", "_self");'
                   >VALIDATE Voucher Number</button
                 ></div
               >
@@ -117,7 +119,7 @@
                 <button
                   class="checkout"
                   style="margin: 10px 0px 10px 0px"
-                  onclick="window.open('/order.html', '_self')"
+                  onclick="window.open('../order.html', '_self')"
                   ><i class="fas fa-money-check-alt"></i> PAY</button
                 >
               </div>
@@ -154,9 +156,9 @@
       <div id="szcontainer"></div>
     </footer>
   </body>
-  <script src="/js/pay.js"></script>
+  <script src="../js/pay.js"></script>
   <script type="module">
-    import navbar from "./components/navbar.js";
+    import navbar from "../components/navbar.js";
 
     //  console.log("navbar:",navbar)
 
@@ -165,7 +167,7 @@
   </script>
   <!-- footer -->
   <script type="module">
-    import footer from "./components/footer.js";
+    import footer from "../components/footer.js";
 
     // console.log("footer:",footer)
 

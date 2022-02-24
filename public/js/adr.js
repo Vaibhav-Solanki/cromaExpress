@@ -31,5 +31,5 @@ function cartChange() {
 mapCart(testData);
 function openPay() {
   localStorage.setItem("totalCost", JSON.stringify(totalCost));
-  window.open("/paytm.html", "_self");
+  window.open("/routes//paytm.html", "_self");
 }
