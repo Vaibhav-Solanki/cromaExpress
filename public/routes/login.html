@@ -16,7 +16,7 @@
         font-family: "Poppins", sans-serif;
       }
       body {
-        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+        background-color: black;
         height: 100vh;
         overflow: hidden;
       }
@@ -113,9 +113,7 @@
       try {
         let res = await fetch(url, {
           method: "POST",
-
           body: bodyLogin,
-
           headers: {
             "content-Type": "application/json",
           },

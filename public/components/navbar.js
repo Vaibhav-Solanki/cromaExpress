@@ -536,9 +536,9 @@ function navbar() {
       </div>
      
       
-      <a href="signin.html">
+      <a href="/routes/login.html">
       <div id="szsign">
-        <button  > SIGN IN</button>
+        <button> SIGN IN</button>
       </div>
       </a>
       
