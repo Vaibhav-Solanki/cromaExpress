@@ -129,7 +129,8 @@
         let data = await res.json();
         if (!data.message) {
           alert("Registration Success");
-          window.open("./index.html", "_self");
+          localStorage.setItem("user", JSON.stringify(data.user));
+          window.open("../index.html", "_self");
         } else {
           alert(data.message);
         }

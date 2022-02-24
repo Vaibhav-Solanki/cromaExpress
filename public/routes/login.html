@@ -83,8 +83,13 @@
     <div id="mainBox">
       <h2><i class="fas fa-user"></i> Login</h2>
       <div id="logiForm">
-        <input type="mail" required placeholder="Email Adress..." id="mail" />
-        <input type="password" required placeholder="Password..." id="pass" />
+        <input type="mail" required placeholder="Email Adress..." id="email" />
+        <input
+          type="password"
+          required
+          placeholder="Password..."
+          id="password"
+        />
         <button style="background-color: #f5c518" id="log">Login</button>
         <hr style="width: 80%" />
         <button
@@ -100,8 +105,8 @@
     async function Login(e) {
       e.preventDefault();
       let bodyLogin = {
-        password: document.querySelector("#pass").value,
-        username: document.querySelector("#mail").value,
+        password: document.querySelector("#password").value,
+        email: document.querySelector("#email").value,
       };
       bodyLogin = JSON.stringify(bodyLogin);
       let url = `/log`;
@@ -116,21 +121,17 @@
           },
         });
         let data = await res.json();
-        if (data.error == false) {
-          var logData = {
-            username: document.querySelector("#mail").value,
-            token: data.token,
-          };
-          saveLoc(logData);
-        }
+        if (!data.message) {
+          saveLoc(data);
+        } else alert(data.message);
       } catch (err) {
         console.log(err);
       }
     }
     function saveLoc(data) {
       alert("Login Succesful");
-      localStorage.setItem("token", JSON.stringify(data));
-      window.open("./index.html", "_self");
+      localStorage.setItem("user", JSON.stringify(data.user));
+      window.open("../index.html", "_self");
     }
   </script>
 </html>
