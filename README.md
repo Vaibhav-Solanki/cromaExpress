@@ -27,7 +27,7 @@ executed in 4 days.
 ## Install process
 
 ```bash
-pip install foobar
+npm install
 ```
 
 ## Usage
