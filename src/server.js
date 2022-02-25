@@ -16,8 +16,8 @@ app.post("/log", login);
 module.exports = async () => {
   try {
     start();
-    app.listen(process.env.PORT, () => {
-      console.log(`listening on port ${process.env.PORT}`);
+    app.listen(8080, () => {
+      console.log(`listening on port 8080`);
     });
   } catch (error) {
     console.log(error.message);
