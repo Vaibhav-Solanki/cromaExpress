@@ -34,6 +34,7 @@ Team
 
 ```bash
 npm install
+npm start
 ```
 
 ## Contributing
