@@ -22,7 +22,8 @@ Used keywords for SEO
 Added animation frames for a smooth
 experience
 
-## A collaborative project built by a team of 4
+## Team
+A collaborative project built by a team of 4
 executed in 4 days.
 Team
 - [Goutam verma](https://github.com/gautamverma095)
