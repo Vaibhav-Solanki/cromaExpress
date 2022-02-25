@@ -26,7 +26,7 @@ experience
 A collaborative project built by a team of 4
 executed in 4 days.
 Team
-- [Goutam verma](https://github.com/gautamverma095)
+- [Gautam verma](https://github.com/gautamverma095)
 - [Manjunath](https://github.com/Manjunath-BV23)
 - [Saniya Zehra](https://github.com/Saniyzehra123)
 - [Vaibhav Solanki](https://github.com/Vaibhav-Solanki)
