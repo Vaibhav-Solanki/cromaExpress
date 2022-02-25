@@ -12,12 +12,12 @@ app.use(express.static("public"));
 app.use("/product", prodPage);
 app.post("/reg", register);
 app.post("/log", login);
-
+port = process.env.PORT || 80;
 module.exports = async () => {
   try {
     start();
-    app.listen(8080, () => {
-      console.log(`listening on port 8080`);
+    app.listen(port, () => {
+      console.log(`listening on port ${port}`);
     });
   } catch (error) {
     console.log(error.message);
