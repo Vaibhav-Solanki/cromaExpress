@@ -21,28 +21,18 @@ increase user interaction
 Used keywords for SEO
 Added animation frames for a smooth
 experience
-A collaborative project built by a team of 4
-executed in 4 days.
 
+## A collaborative project built by a team of 4
+executed in 4 days.
+Team
+- [Goutam verma](https://github.com/gautamverma095)
+- [Manjunath](https://github.com/Manjunath-BV23)
+- [Saniya Zehra](https://github.com/Saniyzehra123)
+- [Vaibhav Solanki](https://github.com/Vaibhav-Solanki)
 ## Install process
 
 ```bash
 npm install
-```
-
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
 ```
 
 ## Contributing
