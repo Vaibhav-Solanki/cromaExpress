@@ -18,7 +18,7 @@ const register = async (req, res) => {
     let user = await User.findOne({ email: req.body.email }).lean().exec();
     if (user)
       return res.status(400).send({ message: "Please try another email" });
-    user = await User.create(req.body);
+    user =  await User.create(req.body);
     const token = newToken(user);
     res
       .cookie("jwt", token, {
