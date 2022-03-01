@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 module.exports = () => {
   return mongoose.connect(
-    "Database"
+    process.env.dataBase
   );
 };
